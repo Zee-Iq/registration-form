@@ -23,9 +23,10 @@ function App() {
           <label>Password: </label>
           <input type="password" name="password" placeholder="password" />
         </div>
+        <button className='fluid ui button grey'>Submit</button>
       </form>
     </div>
-    <button></button>
+  
   );
 }
 
