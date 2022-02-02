@@ -24,7 +24,7 @@ function App() {
       <div>{userInfo.email}</div>
     
 
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form className="ui form" onSubmit={handleSubmit(onSubmit)} >
         <h1>Registration Form</h1>
      
 
@@ -60,7 +60,7 @@ function App() {
             placeholder="password" /* ref= {register} */
           />
         </div>
-        <button className="fluid ui button grey">Submit</button>
+        <button className="ui inverted secondary button">Submit</button>
       </form>
     </div>
   );
