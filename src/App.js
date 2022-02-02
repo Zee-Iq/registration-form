@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import "./App.css";
 
 function App() {
+  /* Allows the program to manage and handle the form  */
+  const {register, handleSubmit, errors} = useForm();
   return (
     <div className="container">
       <form>
@@ -12,12 +15,13 @@ function App() {
         {/* Username */}
         <div className="field">
           <label>Username: </label>
-          <input type="text" name="username" placeholder="username" />
+          <input type="text" name="username" placeholder="username" /* ref= {register}  *//>
+          {/* conected input to useForm() through ref attribute */}
         </div>
         {/* Email */}
         <div className="field">
           <label>Email: </label>
-          <input type="email" name="email" placeholder="Email" />
+          <input type="email" name="email" placeholder="Email"  />
         </div>
         {/* Password */}
         <div className="field">
