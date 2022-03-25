@@ -2,7 +2,7 @@
 # Registration form with eventhandlers in React
 
 
-### Registration Form with eventhandlers in React
+### Registration Form with event handlers in React
 
 
 
